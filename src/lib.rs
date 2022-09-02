@@ -1,6 +1,7 @@
 use rustfft::num_complex::Complex;
 
-fn dft(signal: Vec<Complex<f32>>) -> Vec<Complex<f32>> {
+
+pub fn dft(signal: Vec<Complex<f32>>) -> Vec<Complex<f32>> {
 	let mut output = Vec::new();
 
 	let n: usize = signal.len();
